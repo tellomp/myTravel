@@ -1,8 +1,14 @@
 DROP DATABASE IF EXISTS passport_demo;
 CREATE DATABASE passport_demo;
 
-DROP DATABASE IF EXISTS database_test;
-CREATE DATABASE database_test;
+DROP DATABASE IF EXISTS products_db;
+CREATE DATABASE products_db;
+USE products_db;
 
-DROP DATABASE IF EXISTS database_production;
-CREATE DATABASE database_production;
+CREATE TABLE things(
+id  INT AUTO_INCREMENT NOT NULL,
+productName VARCHAR(200) NOT NULL,
+price DECIMAL (10,2),
+link VARCHAR(999),
+PRIMARY KEY (id)
+);

@@ -19,5 +19,13 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
+  },
+    "pins":{
+    "username": "root",
+    "password": "password",
+    "database": "pins",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+    
   }
 }
