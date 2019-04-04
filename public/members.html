@@ -7,9 +7,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+
 </head>
 
 <body>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text"><h2>Welcome <span class="member-name"></span></h2></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="callout large primary">
+    <div class="row column text-center">
+      <h1>Our Blog</h1>
+    </div>
+  </div>
+  <div class="row" id="content">
+    <div class="medium-8 columns">
+    <p><ins class="bookingaff" data-aid="1750402" data-target_aid="1750402" data-prod="map" data-width="803"
+        data-height="682" data-lang="ualng" data-dest_id="0" data-dest_type="landmark" data-latitude="38.8815161"
+        data-longitude="-77.1162063" data-landmark_name="Alexandria VA" data-mwhsb="0">
+        <!-- Anything inside will go away once widget is loaded. -->
+        <a href="//www.booking.com?aid=1750402">Booking.com</a>
+      </ins>
+      <script type="text/javascript">
+        (function (d, sc, u) {
+          var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = u + '?v=' + (+new Date());
+          p.parentNode.insertBefore(s, p);
+        })(document, 'script', '//aff.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+      </script>
+      </div>
+      </div>
+      <div class="blog-post">
+        <h3>Awesome blog post title <small>3/6/2015</small></h3>
+        <img class="thumbnail" src="https://placehold.it/850x350">
+        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue.
+          Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac
+          lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget
+          luctus.</p>
+        <div class="callout">
+          <ul class="menu simple">
+            <li><a href="#">Author: Mike Mikers</a></li>
+            <li><a href="#">Comments: 3</a></li>
+          </ul>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="medium-3 columns" data-sticky-container>
+      <div class="sticky" data-sticky data-anchor="content">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Skyler</a></li>
+          <li><a href="#">Jesse</a></li>
+          <li><a href="#">Mike</a></li>
+          <li><a href="#">Holly</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+   
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -19,13 +97,8 @@
     </div>
   </div>
 </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
-      </div>
-    </div>
-  </div>
+
+    
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
