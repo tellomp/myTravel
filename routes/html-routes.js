@@ -22,11 +22,18 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
+ 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   //this is the middleware.. you can add more to this if you want to see all their post, etc
   app.get("/members", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
+  });
+
+  //May-04/02
+  app.get("/foursquare", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/foursquare.html"));
+    
   });
 
 };
