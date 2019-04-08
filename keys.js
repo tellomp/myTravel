@@ -1,4 +1,4 @@
-exports.amazonKeyStore = {
-    awsId: process.env.AWS_ACCESS_KEY_ID,
-    awsSecret: process.env.AWS_SECRET_ACCESS_KEY
+exports.fourSquaureKey = {
+    CLIENT_ID: process.env.CLIENT_ID,
+    CLIENT_SECRET: process.env.CLIENT_SECRET
 }

@@ -2,3 +2,13 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+#container .slick-slide{
+  margin: 5px;
+}
+
+#container .slick-slide img{
+  width: 100%;
+  height: 250px;
+
+  
+}

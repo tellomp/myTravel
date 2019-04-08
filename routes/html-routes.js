@@ -31,9 +31,8 @@ module.exports = function(app) {
   });
 
   //May-04/02
-  app.get("/products", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/product.html"));
-  
+  app.get("/foursquare", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/foursquare.html"));
     
   });
 
