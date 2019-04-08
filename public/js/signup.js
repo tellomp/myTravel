@@ -1,6 +1,8 @@
 $(document).ready(function() {
   // Getting references to our form and input
   var signUpForm = $("form.signup");
+  var fNameInput = $("input#first-name");
+  var lNameInput = $("input#last-name")
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
 
@@ -8,6 +10,8 @@ $(document).ready(function() {
   signUpForm.on("submit", function(event) {
     event.preventDefault();
     var userData = {
+      fName: fNameInput.val().trim(),
+      lName: lNameInput.val().trim(),
       email: emailInput.val().trim(),
       password: passwordInput.val().trim()
     };
@@ -19,6 +23,8 @@ $(document).ready(function() {
     signUpUser(userData.email, userData.password);
     emailInput.val("");
     passwordInput.val("");
+    fNameInput.val("");
+    lNameInput.val("");
   });
 
   // Does a post to the signup route. If succesful, we are redirected to the members page

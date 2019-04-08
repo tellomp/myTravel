@@ -20,6 +20,8 @@ module.exports = function(app) {
   {
     console.log(req.body);
     db.User.create({
+      fName: req.body.fName,
+      lName: req.body.lName,
       email: req.body.email,
       password: req.body.password
     }).then(function() {

@@ -2,3 +2,132 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+.appName{
+  font-family: 'Faster One', cursive;
+  color: #fefefe;
+}
+.appNamelg{
+   font-family: 'Faster One', cursive;
+  color: black;
+  margin-right: 90%;
+  background: none;
+
+}
+/*SIGNUP*/
+.signup1{
+  background-color:rgb(192,192,192);
+  opacity:0.9;
+  margin-bottom: 300px;
+  height: 450px;
+  width: 50%;
+  margin-left:25% ;
+  margin-right: 25%;
+  text-align: center;
+ font-family: 'Stint Ultra Condensed', cursive;
+ font-size: 35px;
+}
+.login1{
+ background-color:rgb(192,192,192);
+  opacity:0.9;
+  margin-bottom: 300px;
+  height: 450px;
+  width: 50%;
+  margin-left:25% ;
+  margin-right: 25%;
+  text-align: center;
+ font-family: 'Stint Ultra Condensed', cursive;
+ font-size: 45px;
+}
+
+.lg{
+text-align: center;
+ font-family: 'Stint Ultra Condensed', cursive;
+ font-size: 50px;
+}
+
+
+/* HEROS*/
+.form-text{
+   font-family: 'Stint Ultra Condensed', cursive;
+}
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+  background-size: cover;
+}
+.hero-full-screenlg {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("https://www.tripsavvy.com/thmb/lydwnnEgnL0XPLC-Lxsm2MM2oZM=/4272x2848/filters:fill(auto,1)/GettyImages-150127577-58f920153df78ca159d41100.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+
+.hero-full-screen .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
+
