@@ -1,13 +1,3 @@
-// $(".submitButton").on("click", function(event) {
-//     event.preventDefault();
-//     var newCity = obj.response.groups[0].items[0].venue.location.city
-//     var input = 
-//     {
-//         city: $("#placeChosen").val().trim(),
-//         pointOfInterest: $("#thingsOfInterest").val().trim()
-//     }
-    
-// });
 $(document).ready(function() {
     console.log("on page load");
     var urlParams =new URLSearchParams(window.location.search);
