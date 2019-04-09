@@ -3,12 +3,8 @@ $(document).ready(function() {
   // and updates the HTML on the page
   $.get("/api/user_data").then(function(data) 
   {
-    $(".member-name").text(data.email);
-    
+    $(".member-name").text(data.fName);
   });
-
-
-
-});
+  });
 
 //everything that they are members of you have to include here.. you need to pass it in the api route in order to call it here
