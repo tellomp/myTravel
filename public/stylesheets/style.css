@@ -21,8 +21,8 @@ form.login {
 .appNamelg{
    font-family: 'Faster One', cursive;
   color: black;
-  margin-right: 90%;
   background: none;
+  font-size: 55px;
 
 }
 /*SIGNUP*/
@@ -141,6 +141,28 @@ text-align: center;
 .hero-full-screen .top-bar .menu a {
   color: #fefefe;
   font-weight: bold;
+}
+
+
+.hero-section {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
 }
 
 
