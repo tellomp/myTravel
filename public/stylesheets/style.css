@@ -30,7 +30,7 @@ p{
 }
 .signup1{
   background-color:rgb(192,192,192);
-  opacity:0.9;
+  opacity:0.7;
   margin-bottom: 300px;
   height: 450px;
   width: 50%;
@@ -38,15 +38,23 @@ p{
   margin-right: 25%;
   text-align: center;
 font-family: 'Dosis', sans-serif;
- font-size: 25px;
+
+ font-size: 35px;
 }
 .signup{
   font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+
+
+}
+.signup{
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
 
 }
 .login1{
  background-color:rgb(192,192,192);
-  opacity:0.9;
+  opacity:0.7;
   margin-bottom: 300px;
   height: 450px;
   width: 50%;
@@ -60,12 +68,18 @@ font-family: 'Dosis', sans-serif;
 .lg{
 text-align: center;
 font-family: 'Dosis', sans-serif;
- font-size: 50px;
+
+ font-size: 35px;
+
 }
 
 /* HEROS*/
 .form-text{
 font-family: 'Dosis', sans-serif;
+
+font-size: 35px;
+=======
+
 }
 .hero-full-screen {
   height: 100vh;
@@ -81,7 +95,7 @@ font-family: 'Dosis', sans-serif;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://images.unsplash.com/photo-1461530986733-938bd598a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80") center center no-repeat;
   background-size: cover;
 }
 .hero-full-screenlg {
@@ -98,7 +112,7 @@ font-family: 'Dosis', sans-serif;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("https://www.tripsavvy.com/thmb/lydwnnEgnL0XPLC-Lxsm2MM2oZM=/4272x2848/filters:fill(auto,1)/GettyImages-150127577-58f920153df78ca159d41100.jpg") center center no-repeat;
+  background: url("https://unsplash.it/1500/475?image=1050") center center no-repeat;
   background-size: cover;
 }
 
