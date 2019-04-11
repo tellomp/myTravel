@@ -1,8 +1,12 @@
+
 #quoteSection {
   width: 500px;
   height: 500px;
   background-color: aqua;
 }
+=======
+/*SIGNUP*/
+
 form.signup,
 form.login {
   margin-top: 50px;
@@ -15,57 +19,75 @@ form.login {
 #container .slick-slide img{
   width: 100%;
   height: 250px;
-
   
 }
-
 .appName{
-  font-family: 'Faster One', cursive;
+  font-family: 'Dosis', sans-serif;
   color: black;
 }
 .appNamelg{
-   font-family: 'Faster One', cursive;
+ font-family: 'Dosis', sans-serif;
   color: black;
-  margin-right: 90%;
   background: none;
+  font-size: 25px;
 
 }
-/*SIGNUP*/
+p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+}
 .signup1{
   background-color:rgb(192,192,192);
-  opacity:0.9;
+  opacity:0.7;
   margin-bottom: 300px;
   height: 450px;
   width: 50%;
   margin-left:25% ;
   margin-right: 25%;
   text-align: center;
- font-family: 'Stint Ultra Condensed', cursive;
+font-family: 'Dosis', sans-serif;
+
  font-size: 35px;
+}
+.signup{
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+
+
+}
+.signup{
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+
 }
 .login1{
  background-color:rgb(192,192,192);
-  opacity:0.9;
+  opacity:0.7;
   margin-bottom: 300px;
   height: 450px;
   width: 50%;
   margin-left:25% ;
   margin-right: 25%;
   text-align: center;
- font-family: 'Stint Ultra Condensed', cursive;
- font-size: 45px;
+ font-family: 'Dosis', sans-serif;
+ font-size: 35px;
 }
 
 .lg{
 text-align: center;
- font-family: 'Stint Ultra Condensed', cursive;
- font-size: 50px;
-}
+font-family: 'Dosis', sans-serif;
 
+ font-size: 35px;
+
+}
 
 /* HEROS*/
 .form-text{
-   font-family: 'Stint Ultra Condensed', cursive;
+font-family: 'Dosis', sans-serif;
+
+font-size: 35px;
+=======
+
 }
 .hero-full-screen {
   height: 100vh;
@@ -81,7 +103,7 @@ text-align: center;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://images.unsplash.com/photo-1461530986733-938bd598a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80") center center no-repeat;
   background-size: cover;
 }
 .hero-full-screenlg {
@@ -98,7 +120,7 @@ text-align: center;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("https://www.tripsavvy.com/thmb/lydwnnEgnL0XPLC-Lxsm2MM2oZM=/4272x2848/filters:fill(auto,1)/GettyImages-150127577-58f920153df78ca159d41100.jpg") center center no-repeat;
+  background: url("https://unsplash.it/1500/475?image=1050") center center no-repeat;
   background-size: cover;
 }
 
@@ -147,4 +169,27 @@ text-align: center;
   color: #fefefe;
   font-weight: bold;
 }
+
+.hero-section {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+/*MAIN PAGE*/
 
