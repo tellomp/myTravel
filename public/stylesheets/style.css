@@ -38,7 +38,14 @@ p{
   margin-right: 25%;
   text-align: center;
 font-family: 'Dosis', sans-serif;
+
  font-size: 35px;
+}
+.signup{
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+
+
 }
 .signup{
   font-family: 'Dosis', sans-serif;
@@ -61,13 +68,18 @@ font-family: 'Dosis', sans-serif;
 .lg{
 text-align: center;
 font-family: 'Dosis', sans-serif;
+
  font-size: 35px;
+
 }
 
 /* HEROS*/
 .form-text{
 font-family: 'Dosis', sans-serif;
+
 font-size: 35px;
+=======
+
 }
 .hero-full-screen {
   height: 100vh;
