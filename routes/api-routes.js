@@ -1,7 +1,9 @@
 // Requiring our models and passport as we've configured it
+require("dotenv").config();
 var db = require("../models");
 var passport = require("../config/passport");
-
+var unirest = require("unirest");
+var request = require("request");
 module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -53,4 +55,90 @@ module.exports = function (app) {
     }
   });
 
+
+
+
+
+
+  app.get("/api/flights/:origin/:destination/:outbound/:return", function(req, res) {
+    console.log(req.params);
+
+
+    var url="https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browseroutes/v1.0/US/USD/en-US/";
+    var originPlace= req.params.origin +"-sky";
+    var destination= req.params.destination +"-sky";
+    var outboundDate= req.params.outbound;
+    var returnDate= req.params.return; 
+     
+    url+= originPlace + "/"+ destination + "/" + outboundDate + "/"+ returnDate;
+
+    console.log(url);
+
+unirest.get(url)
+ .header("X-RapidAPI-Host", "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com")
+ .header("X-RapidAPI-Key", "484be930bfmshe1d3b695005a445p1bc458jsnf3dcffac49bc")
+ .end(function (result) {
+   console.log(result.status, result.headers, result.body);
+   
+
+   
+   res.json(result.body);
+ 
+ });
+    })
+    
+    app.get("/modelsFoursquare", function(req, res) {
+      var cityQuery = req.query.city;
+      console.log("City: " + cityQuery);
+      var interestQuery = req.query.interest;
+      console.log("Interest: " + interestQuery);
+      // console.log(req);
+	  request({
+        url: 'https://api.foursquare.com/v2/venues/explore',
+        method: 'GET',
+        qs: {
+          client_id: process.env.CLIENT_ID,
+          client_secret: process.env.CLIENT_SECRET,
+        //   ll: '40.7243,-74.0018',
+          near: cityQuery,
+          query: interestQuery,
+          v: '20180323',
+          limit: 10
+        }
+      }, function(err, callres, body) {
+        if (err) {
+          console.error(err);
+        } else {
+          // console.log(body);
+          var obj = JSON.parse(body);
+          // console.log("\n\n\n");
+          // console.log(obj);
+          if (obj.response && obj.response.groups && obj.response.groups[0].items){
+            var listOfItems = obj.response.groups[0].items;
+            var responseList = [];
+            for (var i=0; i<listOfItems.length; i++){
+              var currentItem = listOfItems[i];
+              console.log(currentItem);
+              var formattedAddress = currentItem.venue.location.formattedAddress;
+              var name = currentItem.venue.name;
+              var categoryList = currentItem.venue.categories[0].name;
+              console.log(formattedAddress);
+              console.log(name);
+              console.log(categoryList);
+              var formattedItem = { address: formattedAddress, name: name, category:  categoryList  };
+              responseList.push(formattedItem);
+            }
+            var myJSON = JSON.stringify(responseList);
+            console.log("returning the following information: " + myJSON);
+            res.json(myJSON);
+          }
+          else {
+            console.log("no return from server!");
+          }
+        }
+      });
+     
+
+    });
+    
 };

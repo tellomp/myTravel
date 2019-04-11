@@ -1,5 +1,7 @@
-
+require("dotenv").config();
 const request = require('request');
+// import {fourSquareKey} from "../keys.js";
+// console.log(fourSquareKey);
 module.exports = function(app) {app.get("/modelsFoursquare", function(req, res) {
       var cityQuery = req.query.city;
       console.log("City: " + cityQuery);
@@ -63,8 +65,8 @@ module.exports = function(app) {app.get("/modelsFoursquare", function(req, res) 
         url: 'https://api.foursquare.com/v2/venues/explore',
         method: 'GET',
         qs: {
-          client_id: 'XU4XLC0IVV0WTEWROCIZQTKDQR5L2QZMJHV4JXOL0PGBX5OK',
-          client_secret: 'V3C3DO2YUYNFDZXB0ESIW4QYYGDGWEES3ZX3ZSK5AWFAG02J',
+          client_id: process.env.CLIENT_ID,
+          client_secret: process.env.CLIENT_SECRET,
         //   ll: '40.7243,-74.0018',
           near: cityQuery,
           query: interestQuery,
