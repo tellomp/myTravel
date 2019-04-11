@@ -42,19 +42,19 @@ $(document).ready(function() {
                 previousImages.push(selectImage);
                 newImage.attr("src", "/assets/images/" + category + selectImage + ".jpg");
                 newDiv.append(newImage);
-                var paragrhaph = $("<h2>");
+                var paragrhaph = $("<h3>");
                 paragrhaph.text(jsonData[i].name);
                 var paragrhaphAddress = $("<p>");
                 paragrhaphAddress.text(jsonData[i].address)
                 newDiv.append(paragrhaph);
                 newDiv.append(paragrhaphAddress);
-                $("#container").append(newDiv);
+                $("#fs_container").append(newDiv);
                
             }
            
             
 
-            $('#container').slick({
+            $('#fs_container').slick({
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 3

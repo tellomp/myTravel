@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <form action="/foursquare">
+    <!-- <form action="/foursquare">
       City:<br>
-      <input type="text" name="city" value="City" id="placeChosen">
+      <input type="text" name="city" value="City" id="placeChosen" class="form-control form-control-lg">
       <br><br>
       Interests:<br>
-      <select name="interest">
+      <select name="interest" class="form-control form-control-lg">
         <option value="hotels">Hotels</option>
         <option value="restaurant">Restaurants</option>
         <option value="coffee">Coffee</option>
@@ -32,8 +32,64 @@
         <option value="museum">Museum</option>
       </select>
       <br><br>
-      <input type="submit" value="Submit">
-    </form> 
+      <input type="submit" value="Search" class="form-control form-control-lg">
+    </form>  -->
+
+
+    <!--Container-->
+    <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-12 col-lg-10">
+            <ul class="feature-list feature-list-sm text-center row">
+               <li class="col-md-6  col-lg-4">
+                  <div class="card text-center">
+                     <div class="card-body">
+                        <h2 class="uppercase ">Adventure begins</h2>
+
+
+                        <div class="col"></div>
+                        <div class="block-content  gap-one-top-sm">
+                           <div class="card  border-dashed">
+                              <div class="card-body p-5 block-subscribe ">
+
+                                     <form action="/foursquare">
+                                       City:<br>
+                                       <input type="text" name="city" value="City" id="placeChosen" class="form-control form-control-lg">
+                                       <br><br>
+                                       Interests:<br>
+                                       <select name="interest" id="input_interest" class="form-control form-control-lg">
+                                         <option value="hotels">Hotels</option>
+                                         <option value="restaurant">Restaurants</option>
+                                         <option value="coffee">Coffee</option>
+                                         <option value="shopping">Shopping</option>
+                                         <option value="museum">Museum</option>
+                                       </select>
+                                       <br><br>
+                                       <input type="submit" value="Search" class="form-control form-control-lg">
+                                     </form>                       
+                                    
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+         </div>
+         </li>
+         <li class="col">
+            <div class="card text-center">
+               <div class="card-body">
+                  <h2 class="uppercase ">Results</h2>
+                  <div id="container">
+                                     
+                  </div>
+               </div>
+            </div>
+         </li>
+         </ul>
+      </div>
+   </div>
+   </div>
+   <!--End container-->
     
     <div id="container">
     
