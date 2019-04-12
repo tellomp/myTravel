@@ -42,12 +42,12 @@ $(document).ready(function() {
                 previousImages.push(selectImage);
                 newImage.attr("src", "/assets/images/" + category + selectImage + ".jpg");
                 newDiv.append(newImage);
-                var paragrhaph = $("<h3>");
-                paragrhaph.text(jsonData[i].name);
-                var paragrhaphAddress = $("<p>");
-                paragrhaphAddress.text(jsonData[i].address)
-                newDiv.append(paragrhaph);
-                newDiv.append(paragrhaphAddress);
+                var paragraph = $("<h4>");
+                paragraph.text(jsonData[i].name);
+                var paragraphAddress = $("<p>");
+                paragraphAddress.text(jsonData[i].address)
+                newDiv.append(paragraph);
+                newDiv.append(paragraphAddress);
                 $("#fs_container").append(newDiv);
                
             }
