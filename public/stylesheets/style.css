@@ -1,0 +1,186 @@
+/*SIGNUP*/
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+#container .slick-slide{
+  margin: 5px;
+}
+
+#container .slick-slide img{
+  width: 100%;
+  height: 250px;
+  
+}
+.appName{
+  font-family: 'Dosis', sans-serif;
+  color: black;
+}
+.appNamelg{
+ font-family: 'Dosis', sans-serif;
+  color: black;
+  background: none;
+  font-size: 25px;
+
+}
+p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+}
+.signup1{
+  background-color:rgb(192,192,192);
+  opacity:0.7;
+  margin-bottom: 300px;
+  height: 450px;
+  width: 50%;
+  margin-left:25% ;
+  margin-right: 25%;
+  text-align: center;
+font-family: 'Dosis', sans-serif;
+
+ font-size: 35px;
+}
+.signup{
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+
+
+}
+.signup{
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+
+}
+.login1{
+ background-color:rgb(192,192,192);
+  opacity:0.7;
+  margin-bottom: 300px;
+  height: 450px;
+  width: 50%;
+  margin-left:25% ;
+  margin-right: 25%;
+  text-align: center;
+ font-family: 'Dosis', sans-serif;
+ font-size: 35px;
+}
+
+.lg{
+text-align: center;
+font-family: 'Dosis', sans-serif;
+
+ font-size: 35px;
+
+}
+
+/* HEROS*/
+.form-text{
+font-family: 'Dosis', sans-serif;
+
+font-size: 35px;
+=======
+
+}
+.hero-full-screen {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("https://images.unsplash.com/photo-1461530986733-938bd598a854?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80") center center no-repeat;
+  background-size: cover;
+}
+.hero-full-screenlg {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("https://unsplash.it/1500/475?image=1050") center center no-repeat;
+  background-size: cover;
+}
+
+
+.hero-full-screen .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
+
+.hero-section {
+  background: url("https://static.pexels.com/photos/248064/pexels-photo-248064.jpeg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+/*MAIN PAGE*/
