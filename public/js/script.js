@@ -107,5 +107,41 @@
         var path = $(this).children('img').attr('src');
         $(this).css('background-image', 'url("' + path + '")').css('background-position', 'initial');
     });
+
+
         
 })(jQuery);
+
+function handleCheckboxChange(checkbox) {
+    if(checkbox.checked == true){
+        $(checkbox).parent().find('div').css('text-decoration', 'line-through');
+    }else{
+        $(checkbox).parent().find('div').css('text-decoration', '');
+   }
+}
+
+function onAddTaskSubmit() {
+    var newTask = $("#new-task").val();
+    if(newTask) {
+        if($('#completed-tasks li').text().trim() == 'Start tracking a task to the left.'){ 
+            $('#completed-tasks').empty();
+        }
+
+        var checkbox = $('<input>');
+        checkbox.attr('type', 'checkbox');
+        checkbox.attr('onchange', 'handleCheckboxChange(this);');
+
+        var taskDiv = $('<div>');
+        taskDiv.addClass('form-control form-control-lg');
+        taskDiv.html(newTask);
+
+        var newLI = $('<li>');
+        newLI.append(checkbox);
+        newLI.append(taskDiv);
+
+        $('#completed-tasks').append(newLI);
+        $("#new-task").val('');
+    }
+    return false;
+}
+

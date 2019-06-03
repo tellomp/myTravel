@@ -265,7 +265,7 @@
               <div class="card  border-dashed">
                 <div class="card-body p-5 block-subscribe ">
                   <p class="uppercase text-center mb-4">To Do</p>
-                  <form method="get">
+                  <form onsubmit="return onAddTaskSubmit()">
                     <div class="form-row justify-content-center">
                       <div class="col">
                         <div class="form-group">
@@ -287,25 +287,25 @@
               <div class="card  border-dashed">
                 <div class="card-body p-5 block-subscribe ">
                   <p class="uppercase text-center mb-4">Completed</p>
-                  <form method="get">
+                  <div>
                     <div class="form-row justify-content-center">
                       <div class="col">
                         <ul id="completed-tasks">
 
-                          <li><input type="checkbox" checked><input class="form-control form-control-lg" name="new-task" placeholder="New task" id="new-task" type="text"></li>
+                          <li>Start tracking a task to the left.</li>
                         </ul>
                       </div>
-                      <div class="col-auto">
+                      <!-- <div class="col-auto">
                         <button type="edit" class="btn  btn-primary uppercase border-3" id="edit">
                                     Edit</button>
                       </div>
                       <div class="col-auto">
                         <button type="delete" class="btn  btn-primary uppercase border-3" id="delete">
                                     Delete</button>
-                      </div>
+                      </div> -->
 
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -368,23 +368,25 @@
                         <div class="card-body">
                            <h2 class="uppercase ">Adventure begins</h2>
                            <div class="col"></div>
-                           <div class="block-content  gap-one-top-sm">
+                           <div class="block-content overflow-visible gap-one-top-sm">
                               <div class="card  border-dashed">
                                  <div class="card-body p-5 block-subscribe ">
-                                        <form action="/members">
+                                        <form onsubmit="return onSearchSubmit()">
                                           City:<br>
                                           <input type="text" name="city" value="City" id="placeChosen" class="form-control form-control-lg" placeholder="City">
                                           <br><br>
                                           Interests:<br>
-                                          <select name="interest" id="input_interest" class="form-control form-control-lg">
-                                            <option value="hotels">Hotels</option>
-                                            <option value="restaurant">Restaurants</option>
-                                            <option value="coffee">Coffee</option>
-                                            <option value="shopping">Shopping</option>
-                                            <option value="museum">Museum</option>
-                                          </select>
+                                          <div class="searchSelect">
+                                            <select name="interest" id="input_interest" class="form-control form-control-lg">
+                                              <option value="hotels">Hotels</option>
+                                              <option value="restaurant">Restaurants</option>
+                                              <option value="coffee">Coffee</option>
+                                              <option value="shopping">Shopping</option>
+                                              <option value="museum">Museum</option>
+                                            </select>
+                                          </div>
                                           <br><br>
-                                          <input type="submit" value="Search" class="form-control form-control-lg">
+                                          <input type="submit" value="Search" id="searchSubmit" class="form-control form-control-lg">
                                         </form>
         
                                  </div>
