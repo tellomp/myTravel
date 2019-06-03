@@ -24,6 +24,7 @@ $(document).ready(function () {
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
   function signUpUser(email, password) {
+    console.log("I clicked the button")
     $.post("/api/signup", {
       email: email,
       password: password
