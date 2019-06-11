@@ -1,6 +1,6 @@
 # Project2: myTravel 
 
-## Overview 
+### Overview 
 1. myTravel is a traveling companion for preparing for vacations, work trips, or just a weekend out.
 
 2. New users coming into the site can sign up for an account by entering their email address and password on the welcoming page. If you already have an account, notice the link that says "Or log in here". This will redirect you to a similar page where you can log in with your existing credentials. 
