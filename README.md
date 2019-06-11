@@ -13,7 +13,7 @@
 
 6. The final section on the page is a hotel look up. You enter the city you will be visiting and the dates you need a hotel room and then press search. A query will be made to Booking.com which will return the hotel rates in the city and a map to see all the available hotels.
 
-## Live App 
+### Live App 
 
 * Check out myTravel here and get ready to make some travel plans! https://mytravelgwb.herokuapp.com
 
