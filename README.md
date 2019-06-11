@@ -1,5 +1,6 @@
 # Project2: myTravel 
 
+## Overview 
 1. myTravel is a traveling companion for preparing for vacations, work trips, or just a weekend out.
 
 2. New users coming into the site can sign up for an account by entering their email address and password on the welcoming page. If you already have an account, notice the link that says "Or log in here". This will redirect you to a similar page where you can log in with your existing credentials. 
@@ -12,7 +13,7 @@
 
 6. The final section on the page is a hotel look up. You enter the city you will be visiting and the dates you need a hotel room and then press search. A query will be made to Booking.com which will return the hotel rates in the city and a map to see all the available hotels.
 
-7. For a demonstration of the site and features please follow the link below to herokuapp where the project is hosted.
+## Live App 
 
-8. Check out myTravel here: https://mytravelgwb.herokuapp.com
+* Check out myTravel here and get ready to make some travel plans! https://mytravelgwb.herokuapp.com
 
