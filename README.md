@@ -15,7 +15,7 @@
 
 ![alt text][login]
 
-[login]: https://github.com/tellomp/Project2/blob/master/public/images/login.png "Log in"
+[login]: https://github.com/tellomp/Project2/blob/master/public/images/logIn.png "Log in"
 
 * If you already have an account, notice the link that says "Or log in here". This will redirect you to a similar page where you can log in with your existing credentials. 
 
@@ -23,7 +23,7 @@
 
 ![alt text][slider]
 
-[slider]: https://github.com/tellomp/Project2/blob/master/public/images/slider.png "Slider"
+[slider]: https://github.com/tellomp/Project2/blob/master/public/images/myTravelSlider.png "Slider"
 
 
 * After logging in, or creating an account, you will be presented with the main travel page. You will be treated by a welcome message and navigation will always be available at the top of the screen. 
@@ -46,6 +46,13 @@
 
 * There is also a link to look up and airport code if you do not know which code you need. This can be viewed at: http://www.airportcodes.org . After they are entered a departing date and return date should be entered in the format of Year-Month-Day. After all this information is filled in press FIND MY FLIGHT. This will generate the results below the form entries. If there are more than three results they will be paginated at 3 items per page. 
 
+
+![alt text][todo]
+
+[todo]: https://github.com/tellomp/Project2/blob/master/public/images/todo.png "To Do"
+
+
+* User is able to create a to-do list to keep track of the things that need to be done for the trip. User can edit, mark completed, and delete a task. 
 
 
 ![alt text][foursquare]
